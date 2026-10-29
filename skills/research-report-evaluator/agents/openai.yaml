@@ -1,0 +1,4 @@
+interface:
+  display_name: "研报价值评估"
+  short_description: "按投资尽调、行业入门、技术调研等用途评估研报质量、可信度与决策价值"
+  default_prompt: "请用 $research-report-evaluator 按我的使用目的评估这份研报，先检查底线，再按用途权重评分，并列出核查依据与限制。"

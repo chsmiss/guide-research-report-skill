@@ -1,0 +1,191 @@
+{
+  "protocol_version": "1.1.0",
+  "report": {
+    "id": "codex_v0",
+    "title": "Codex v0",
+    "filename": "codex_v0_AI制药行业研究报告_20261026.pdf",
+    "path": "reports/codex_v0_AI制药行业研究报告_20261026.pdf",
+    "version": "original-v0-sha256:aa8cb2786a4b369c54d1a3021ceaadbd468f80e076302ad33d790c2252e4aa0e",
+    "sha256": "aa8cb2786a4b369c54d1a3021ceaadbd468f80e076302ad33d790c2252e4aa0e",
+    "publication_date": "2026-10-26",
+    "evidence_cutoff": "报告声明截至2026-10；个别指标期间见正文",
+    "generation_skill_used": false,
+    "provenance_basis": "生成方式与未用skill由提供者说明；未取得完整提示词、运行日志、模型版本与成本记录。",
+    "pages": 13
+  },
+  "assessment": {
+    "purpose": "通用研报质量比较；目标读者具备基本医药/研发知识，关注行业理解与企业筛选。",
+    "assessed_at": "2026-10-29 Asia/Shanghai",
+    "materials_received": [
+      "reports/codex_v0_AI制药行业研究报告_20261026.pdf"
+    ],
+    "checks_performed": [
+      "本次重新核对原件SHA256；复用记录仅限相同文件版本，按v1.1.0统一判据复核。",
+      "阅读Markdown全文或提取PDF全文并重读摘要、技术、临床、商业、财务及结论关键段落。",
+      "两份PDF各抽查五页渲染；Markdown按标题、段落、表格和链接结构审读。",
+      "重新读取四项ClinicalTrials.gov官方API；查英矽/晶泰中报、Schrodinger业绩及Isomorphic-Lilly原公告。",
+      "核对市场预测内部口径、交易首付比例及临床分母；见evidence/source_checks.json与calculation_checks.json。",
+      "评审者自查主结论—证据—推理—限制—下一步；不是外部读者实验。"
+    ],
+    "limitations": [
+      "关键支点抽查，不是全部事实及链接审计；来源核对不等于疗效、平台效率或因果复现。",
+      "仅按本次四个单文件评估；未收到完整生成日志和研究包，不断言作者不存在其他附件。",
+      "未进行企业/客户访谈、独立模型实验、临床个体数据重分析或外部同行评审。",
+      "同一AI评审者知道产品名称，可能有品牌和自评偏差；评分不是盲测，也不证明产品总体优劣。",
+      "主评分按balanced重算；orientation/investment仅改变权重，是敏感性，不是两次独立用途复评。"
+    ],
+    "confidence": "medium",
+    "confidence_basis": "正文、具体缺陷与关键原始记录可定位；抽查外的事实、读者实际表现和生成过程仍未验证。"
+  },
+  "profile": "balanced",
+  "weight_mode": "preset",
+  "weight_rationale": null,
+  "weights": {
+    "scope": 6,
+    "coverage": 8,
+    "evidence": 18,
+    "increment": 10,
+    "reasoning": 14,
+    "quantitative": 8,
+    "industry": 7,
+    "challenge": 7,
+    "decision": 7,
+    "communication": 15
+  },
+  "gate": {
+    "status": "pass",
+    "basis": [
+      "本次原文与原始出处抽查范围见evaluation/evidence/source_checks.json；不是全文保证。",
+      "p4正确区分71例、12周安全性主终点与探索性FVC；p6/p8财务关键数与原始中报相符；p7将算例标作假设。"
+    ],
+    "affected_scope": "",
+    "remediation": ""
+  },
+  "issues": [],
+  "complete": true,
+  "headline_total": 70.9,
+  "diagnostic_total": 70.9,
+  "assessed_contribution": 70.9,
+  "unassessed_weight": 0.0,
+  "unassessed_dimensions": [],
+  "possible_range": [
+    70.9,
+    70.9
+  ],
+  "comparison_key": "98115b9b6eba7072",
+  "dimensions": [
+    {
+      "id": "scope",
+      "label": "问题定义与定位",
+      "weight": 6,
+      "rating": 4,
+      "contribution": 4.8,
+      "observations": "全球、中国与商业化定位明确，含求职附录。",
+      "locators": [
+        "PDF p1"
+      ]
+    },
+    {
+      "id": "coverage",
+      "label": "框架完整性",
+      "weight": 8,
+      "rating": 4,
+      "contribution": 6.4,
+      "observations": "从产业链到企业、财务、估值和跟踪覆盖完整，但多数主题较浅。",
+      "locators": [
+        "PDF p2"
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "事实、证据质量与时效性",
+      "weight": 18,
+      "rating": 3.5,
+      "contribution": 12.6,
+      "observations": "p4保留早期临床边界，p6/p8的2026H1英矽与晶泰关键数据及Schrodinger季度盈利来源获原始披露支持；正文未展开注册号与全部有效性分母。",
+      "locators": [
+        "PDF物理p4、p6、p8、p13；核查C01、C02、C05—C07"
+      ]
+    },
+    {
+      "id": "increment",
+      "label": "信息增量",
+      "weight": 10,
+      "rating": 2.5,
+      "contribution": 5.0,
+      "observations": "以整理和解释公开信息为主，数字示例明确是假设；独立计算和发现较少。",
+      "locators": [
+        "PDF p7"
+      ]
+    },
+    {
+      "id": "reasoning",
+      "label": "分析深度与推理",
+      "weight": 14,
+      "rating": 3.5,
+      "contribution": 9.8,
+      "observations": "逻辑克制，能区分AI参与和因果增益；多数结论仍停留通用框架。",
+      "locators": [
+        "PDF p9"
+      ]
+    },
+    {
+      "id": "quantitative",
+      "label": "定量纪律",
+      "weight": 8,
+      "rating": 3.5,
+      "contribution": 5.6,
+      "observations": "不混比币种和期间，但没有系统统一比较窗口或完整实际利润/现金桥。",
+      "locators": [
+        "PDF p8"
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "行业机制与落地理解",
+      "weight": 7,
+      "rating": 3.5,
+      "contribution": 4.9,
+      "observations": "理解不同收入引擎，具体成本、采购与竞争机制展开有限。",
+      "locators": [
+        "PDF p6"
+      ]
+    },
+    {
+      "id": "challenge",
+      "label": "反证、独立性与边界处理",
+      "weight": 7,
+      "rating": 3.5,
+      "contribution": 4.9,
+      "observations": "纳入项目降级和证据边界，但对缺失、安全和最强替代解释不够深入。",
+      "locators": [
+        "PDF p4"
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "决策可用性与决策工具",
+      "weight": 7,
+      "rating": 3.5,
+      "contribution": 4.9,
+      "observations": "六项尽调清单和观察框架可用，但多为提示，缺少逐对象更新规则。",
+      "locators": [
+        "PDF p10"
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "论证可读性与交付可用性",
+      "weight": 15,
+      "rating": 4,
+      "contribution": 12.0,
+      "observations": "p1以五条结论和阅读说明建立路线，p2先解释AI如何影响有限实验资源，再进入企业与商业。 p7用1亿美元合同、1000万美元首付和9000万美元条件款解释签约/收入/现金；50家客户的市场算例及p8静态现金例子帮助理解口径。 定义、研发任务、临床、公司、商业模式、财务、估值和观察框架顺序清楚；读者无需先读底稿。 大多数段落各有一个问题，语言平实；p9–11仍有需要核查与继续验证的通用重复，解释较浅但不难懂。 表格、摘要和p12术语附录可用；部分术语首次出现仍需回查附录。没有因13页较短直接加分。",
+      "locators": [
+        "PDF p1–2",
+        "PDF p7–10",
+        "PDF p12"
+      ]
+    }
+  ],
+  "notice": "Arithmetic/record validation only; not factual verification. Unknown ranges are not confidence intervals. Compare only with matching purpose, weights, gate restrictions and review depth."
+}

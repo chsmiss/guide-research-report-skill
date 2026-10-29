@@ -1,0 +1,56 @@
+{
+  "assessed_at": "2026-10-29 Asia/Shanghai",
+  "currency": "CNY",
+  "basis": "主观愿付参考，不是市场成交价、收益预测或报告分数换价。",
+  "rights_assumption": "个人、非独占、一次获取，假设提供者有权分发；不含独家数据、访谈、更新、团队/转售授权或咨询答疑。",
+  "public_repository_acquisition_price": 0,
+  "counterfactual": "以下区间用于尚未免费公开时，对相同交付范围的整理便利性估价；发布后这些原件可在本仓库免费获取。",
+  "method": "比较合法免费论文、注册、公司IR与公告的替代性，考虑整理和解释的节时收益，再扣除核查/修复负担；未计量实际工时，不给虚构小时费率。",
+  "reports": [
+    {
+      "id": "codex_v0",
+      "reference_range_cny": [
+        100,
+        300
+      ],
+      "suitable_use": "入门、求职、企业初筛",
+      "reason": "解释连贯、临床财务边界较稳，减少初步整理成本；没有独家事实、实际估值和完整现金模型，专业研究增量有限。",
+      "investment_ready": false
+    },
+    {
+      "id": "bohr_web",
+      "reference_range_cny": [
+        50,
+        150
+      ],
+      "suitable_use": "商业模式与交易结构的讨论底稿",
+      "reason": "主线与清单较好，阅读可节时；市场测算、概率与因果解释需要修复，降低可直接使用价值。",
+      "investment_ready": false
+    },
+    {
+      "id": "bohr_space",
+      "reference_range_cny": [
+        30,
+        100
+      ],
+      "suitable_use": "技术与公司资料索引",
+      "reason": "覆盖面与文献线索有用；技术名词密集，临床标签和时间状态需更新，综合判断增量有限。",
+      "investment_ready": false
+    },
+    {
+      "id": "bohr_advanced",
+      "reference_range_cny": [
+        0,
+        50
+      ],
+      "suitable_use": "快速新闻扫描",
+      "reason": "内容较容易浏览；二手汇总替代性高、重复较多，临床日历与强结论的修复成本较大。",
+      "investment_ready": false
+    }
+  ],
+  "notes": [
+    "0元可理解为现有免费替代材料足够，并非毫无学习价值。",
+    "不建议把任一原样文件按可直接支持投资决策的成品尽调报告付费购买。",
+    "四份重叠较多，组合价值不能简单相加；未估团队授权、独家权利和定制服务价格。"
+  ]
+}

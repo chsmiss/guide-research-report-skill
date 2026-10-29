@@ -1,0 +1,107 @@
+{
+  "version": "1.1.0",
+  "dimensions": {
+    "scope": "问题定义与定位",
+    "coverage": "框架完整性",
+    "evidence": "事实、证据质量与时效性",
+    "increment": "信息增量",
+    "reasoning": "分析深度与推理",
+    "quantitative": "定量纪律",
+    "industry": "行业机制与落地理解",
+    "challenge": "反证、独立性与边界处理",
+    "decision": "决策可用性与决策工具",
+    "communication": "论证可读性与交付可用性"
+  },
+  "profiles": {
+    "balanced": {
+      "label": "通用评估",
+      "weights": {
+        "scope": 6,
+        "coverage": 8,
+        "evidence": 18,
+        "increment": 10,
+        "reasoning": 14,
+        "quantitative": 8,
+        "industry": 7,
+        "challenge": 7,
+        "decision": 7,
+        "communication": 15
+      }
+    },
+    "orientation": {
+      "label": "行业入门与全景扫描",
+      "weights": {
+        "scope": 8,
+        "coverage": 18,
+        "evidence": 15,
+        "increment": 8,
+        "reasoning": 10,
+        "quantitative": 4,
+        "industry": 9,
+        "challenge": 4,
+        "decision": 4,
+        "communication": 20
+      }
+    },
+    "investment": {
+      "label": "投资研究与尽调",
+      "weights": {
+        "scope": 4,
+        "coverage": 5,
+        "evidence": 20,
+        "increment": 8,
+        "reasoning": 12,
+        "quantitative": 14,
+        "industry": 6,
+        "challenge": 7,
+        "decision": 9,
+        "communication": 15
+      }
+    },
+    "technical": {
+      "label": "学术与技术调研",
+      "weights": {
+        "scope": 6,
+        "coverage": 7,
+        "evidence": 20,
+        "increment": 13,
+        "reasoning": 18,
+        "quantitative": 9,
+        "industry": 5,
+        "challenge": 8,
+        "decision": 4,
+        "communication": 10
+      }
+    },
+    "strategy": {
+      "label": "企业战略与采购决策",
+      "weights": {
+        "scope": 7,
+        "coverage": 9,
+        "evidence": 15,
+        "increment": 10,
+        "reasoning": 13,
+        "quantitative": 8,
+        "industry": 10,
+        "challenge": 5,
+        "decision": 8,
+        "communication": 15
+      }
+    },
+    "publication": {
+      "label": "客户交付与对外发布",
+      "weights": {
+        "scope": 6,
+        "coverage": 8,
+        "evidence": 22,
+        "increment": 7,
+        "reasoning": 10,
+        "quantitative": 8,
+        "industry": 7,
+        "challenge": 7,
+        "decision": 5,
+        "communication": 20
+      }
+    }
+  }
+}

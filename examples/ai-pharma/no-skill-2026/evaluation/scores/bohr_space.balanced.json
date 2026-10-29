@@ -1,0 +1,223 @@
+{
+  "protocol_version": "1.1.0",
+  "report": {
+    "id": "bohr_space",
+    "title": "玻尔科学空间 Mac·标准 v0",
+    "filename": "玻尔科学空间mac-标准v0-AI制药行业研报_2026.md",
+    "path": "reports/玻尔科学空间mac-标准v0-AI制药行业研报_2026.md",
+    "version": "original-v0-sha256:ea7c3c096d29723d3722905c6231527827391670ec1348a73e8b76ce9b9b0cbf",
+    "sha256": "ea7c3c096d29723d3722905c6231527827391670ec1348a73e8b76ce9b9b0cbf",
+    "publication_date": "2026-10（正文仅到月）",
+    "evidence_cutoff": "报告声明截至2026-10；个别指标期间见正文",
+    "generation_skill_used": false,
+    "provenance_basis": "生成方式与未用skill由提供者说明；未取得完整提示词、运行日志、模型版本与成本记录。"
+  },
+  "assessment": {
+    "purpose": "通用研报质量比较；目标读者具备基本医药/研发知识，关注行业理解与企业筛选。",
+    "assessed_at": "2026-10-29 Asia/Shanghai",
+    "materials_received": [
+      "reports/玻尔科学空间mac-标准v0-AI制药行业研报_2026.md"
+    ],
+    "checks_performed": [
+      "本次重新核对原件SHA256；复用记录仅限相同文件版本，按v1.1.0统一判据复核。",
+      "阅读Markdown全文或提取PDF全文并重读摘要、技术、临床、商业、财务及结论关键段落。",
+      "两份PDF各抽查五页渲染；Markdown按标题、段落、表格和链接结构审读。",
+      "重新读取四项ClinicalTrials.gov官方API；查英矽/晶泰中报、Schrodinger业绩及Isomorphic-Lilly原公告。",
+      "核对市场预测内部口径、交易首付比例及临床分母；见evidence/source_checks.json与calculation_checks.json。",
+      "评审者自查主结论—证据—推理—限制—下一步；不是外部读者实验。"
+    ],
+    "limitations": [
+      "关键支点抽查，不是全部事实及链接审计；来源核对不等于疗效、平台效率或因果复现。",
+      "仅按本次四个单文件评估；未收到完整生成日志和研究包，不断言作者不存在其他附件。",
+      "未进行企业/客户访谈、独立模型实验、临床个体数据重分析或外部同行评审。",
+      "同一AI评审者知道产品名称，可能有品牌和自评偏差；评分不是盲测，也不证明产品总体优劣。",
+      "主评分按balanced重算；orientation/investment仅改变权重，是敏感性，不是两次独立用途复评。"
+    ],
+    "confidence": "medium",
+    "confidence_basis": "正文、具体缺陷与关键原始记录可定位；抽查外的事实、读者实际表现和生成过程仍未验证。"
+  },
+  "profile": "balanced",
+  "weight_mode": "preset",
+  "weight_rationale": null,
+  "weights": {
+    "scope": 6,
+    "coverage": 8,
+    "evidence": 18,
+    "increment": 10,
+    "reasoning": 14,
+    "quantitative": 8,
+    "industry": 7,
+    "challenge": 7,
+    "decision": 7,
+    "communication": 15
+  },
+  "gate": {
+    "status": "restricted",
+    "basis": [
+      "本次原文与原始出处抽查范围见evaluation/evidence/source_checks.json；不是全文保证。",
+      "§五将TEAE写成治疗相关不良事件；临床表仍列IIa，未纳入核查日已公开的III期推进；具体生成日未知，历史时效性保留不确定性；§三跨年份市场区间未统一。"
+    ],
+    "affected_scope": "临床进度和安全性段落需修正后使用; 汇总范围不用于TAM估值",
+    "remediation": "更新III期状态与截止日，区分TEAE和TRAE并逐项核对; 回到各机构定义，按同一年份和同一收入对象建表，无法统一则不合并"
+  },
+  "issues": [
+    {
+      "id": "BS1",
+      "primary_dimension": "evidence",
+      "description": "临床时点不完整且TEAE与治疗相关AE标签混用",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "§五 rentosertib及临床表",
+        "§四 海外代表公司"
+      ],
+      "checks": [
+        "NCT07687459当前招募320例，实际开始2026-09-09",
+        "NCT05938920主要终点为treatment-emergent adverse events；原文写治疗相关"
+      ],
+      "consequence": "临床进度和安全性段落需修正后使用",
+      "repair": "更新III期状态与截止日，区分TEAE和TRAE并逐项核对"
+    },
+    {
+      "id": "BS2",
+      "primary_dimension": "quantitative",
+      "description": "跨年份与未核实定义的市场预测形成汇总范围",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "§三 市场规模"
+      ],
+      "checks": [
+        "比较表的基准跨2025/2026，预测跨2031/2032/2033/2035；未统一至同一观测年"
+      ],
+      "consequence": "汇总范围不用于TAM估值",
+      "repair": "回到各机构定义，按同一年份和同一收入对象建表，无法统一则不合并"
+    }
+  ],
+  "complete": true,
+  "headline_total": 60.3,
+  "diagnostic_total": 60.3,
+  "assessed_contribution": 60.3,
+  "unassessed_weight": 0.0,
+  "unassessed_dimensions": [],
+  "possible_range": [
+    60.3,
+    60.3
+  ],
+  "comparison_key": "9645b89d0becdd78",
+  "dimensions": [
+    {
+      "id": "scope",
+      "label": "问题定义与定位",
+      "weight": 6,
+      "rating": 4,
+      "contribution": 4.8,
+      "observations": "综合技术、市场、公司与投资定位清楚，但部分总体判断强于材料。",
+      "locators": [
+        "Markdown 摘要"
+      ]
+    },
+    {
+      "id": "coverage",
+      "label": "框架完整性",
+      "weight": 8,
+      "rating": 4.5,
+      "contribution": 7.2,
+      "observations": "技术环节、政策、市场和公司广度突出，是可用的信息检索地图。",
+      "locators": [
+        "Markdown 二 技术图谱"
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "事实、证据质量与时效性",
+      "weight": 18,
+      "rating": 2.5,
+      "contribution": 9.0,
+      "observations": "rentosertib状态仍以IIa为主，遗漏2026年III期推进；将TEAE标签写成治疗相关AE；部分关键结果仅链到网站首页。",
+      "locators": [
+        "Markdown 五 临床进展"
+      ]
+    },
+    {
+      "id": "increment",
+      "label": "信息增量",
+      "weight": 10,
+      "rating": 3,
+      "contribution": 6.0,
+      "observations": "整合技术文献与多口径市场有价值，但缺少实际财务重算和有力原创辨别。",
+      "locators": [
+        "Markdown 三 市场规模"
+      ]
+    },
+    {
+      "id": "reasoning",
+      "label": "分析深度与推理",
+      "weight": 14,
+      "rating": 3,
+      "contribution": 8.4,
+      "observations": "有证据限定，但从模型论文列表推断流匹配已取代扩散为主流、从样本推中国非原创机会，论据不足。",
+      "locators": [
+        "Markdown 八 展望"
+      ]
+    },
+    {
+      "id": "quantitative",
+      "label": "定量纪律",
+      "weight": 8,
+      "rating": 2.5,
+      "contribution": 4.0,
+      "observations": "§三把2025/2026基年和2031—2035预测汇总成范围，缺少同年口径桥；24.1与241亿美元的跨文本差异仍待原始定义/单位核对，不判定哪一个已证实正确。",
+      "locators": [
+        "Markdown 三 市场规模"
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "行业机制与落地理解",
+      "weight": 7,
+      "rating": 3,
+      "contribution": 4.2,
+      "observations": "列了众多企业和三类模式，但商业成本、替代及数据/IP权利分析较浅。",
+      "locators": [
+        "Markdown 四 竞争格局"
+      ]
+    },
+    {
+      "id": "challenge",
+      "label": "反证、独立性与边界处理",
+      "weight": 7,
+      "rating": 3,
+      "contribution": 4.2,
+      "observations": "声明自报、披露偏差与审批边界，有所克制；未系统挑战强技术和区域结论。",
+      "locators": [
+        "Markdown 免责声明"
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "决策可用性与决策工具",
+      "weight": 7,
+      "rating": 2.5,
+      "contribution": 3.5,
+      "observations": "三条筛选提示可用，但缺少具体更新窗口、事件规则和实际计算工具。",
+      "locators": [
+        "Markdown 八 展望"
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "论证可读性与交付可用性",
+      "weight": 15,
+      "rating": 3,
+      "contribution": 9.0,
+      "observations": "摘要、技术图谱和企业表便于导航，定义先于大多数展开；读者能建立主题地图。 技术段集中列出FlowMol、MolFORM、PAFlow、FlowMol3等名称，少解释方法差异如何影响研发任务、成本或采购；表格能列出资料，但不能替代解释。临床章节按突破/局限逐层说明是明显优点。 从成本问题到技术和产业的大顺序成立；技术列表与最终工程化/出海判断之间的解释桥不充分，需要读者自己补。 缩写、模型名、融资和市场数字集中，部分观点在摘要与展望重复；相同技术词可在多个章节出现，但很少用一个研发案例贯穿。 Markdown层级、表格和链接可用；没有因未提供PDF/Word扣分，也未对Markdown截图作视觉评价。",
+      "locators": [
+        "Markdown 二 技术图谱，行39–69",
+        "Markdown 五 临床进展，行146–176",
+        "Markdown 八 展望，行220–230"
+      ]
+    }
+  ],
+  "notice": "Arithmetic/record validation only; not factual verification. Unknown ranges are not confidence intervals. Compare only with matching purpose, weights, gate restrictions and review depth."
+}

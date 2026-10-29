@@ -1,0 +1,40 @@
+{
+  "name": "research-report-evaluator",
+  "version": "1.1.0",
+  "copied_at": "2026-10-29 Asia/Shanghai",
+  "copy_policy": "本地已安装版本快照，保留脚本、权重、判据与现有测试；排除缓存。",
+  "files": [
+    {
+      "path": "skills/research-report-evaluator/SKILL.md",
+      "sha256": "c00d186ab5f890122d3b86bb8c91ff7f7c547d1730b2e01be2dba73713664b1f"
+    },
+    {
+      "path": "skills/research-report-evaluator/agents/openai.yaml",
+      "sha256": "0f1f9b20609ecb889cb070a34c5901d95eacddca01736b29dfc9cd6ebb0131a8"
+    },
+    {
+      "path": "skills/research-report-evaluator/references/profiles.json",
+      "sha256": "e621b3a14cb56a408b69691475a10c642d06a752c678507a96d24dc0c37ebe48"
+    },
+    {
+      "path": "skills/research-report-evaluator/references/rubric.md",
+      "sha256": "dec9b3fe6ddee611cb8768c0d63c0e69b2efd685314bbb7db93096d4a56f97ca"
+    },
+    {
+      "path": "skills/research-report-evaluator/references/scoring-record.md",
+      "sha256": "6f80a7dede7c021a2f90d0e0d0394b980cb7294b3b050b48cc518c7464f4a02e"
+    },
+    {
+      "path": "skills/research-report-evaluator/scripts/__pycache__/score_report.cpython-312.pyc",
+      "sha256": "bc7e2b89f89b521971569928c4159eb53c1c57a0c1dcb492cb87015db4288cd0"
+    },
+    {
+      "path": "skills/research-report-evaluator/scripts/score_report.py",
+      "sha256": "673efc6c2ae5514206e19113f24bbf992699c02917e90fcacdb48ff2be1d063a"
+    },
+    {
+      "path": "skills/research-report-evaluator/tests/test_scoring.py",
+      "sha256": "ff08f6b8c1c9dff68c187d7f26c46d929d4802f1aed6956dbe3cf66cd38f1404"
+    }
+  ]
+}

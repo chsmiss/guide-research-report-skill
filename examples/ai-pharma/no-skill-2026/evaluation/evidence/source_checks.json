@@ -1,0 +1,113 @@
+{
+  "assessed_at": "2026-10-29 Asia/Shanghai",
+  "scope": "四份原件的共享关键支点抽查；不是全文审计。以下网页/API在本轮重新读取；表内数字是评审摘录，非原始材料全文。",
+  "checks": [
+    {
+      "id": "C01",
+      "subject": "Rentosertib IIa期的样本、终点与安全性标签",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT05938920",
+      "snapshot": "NCT05938920.json",
+      "source_locator": "protocolSection.designModule.enrollmentInfo；outcomesModule.primaryOutcomes；resultsSection.outcomeMeasuresModule",
+      "finding": "实际随机71例；主要终点TEAE，不是治疗相关AE。FVC绝对变化为次要终点；60mg QD和安慰剂均值分别0.0984、-0.0203 L；对应FVC结果实际分析人数10和14，不能当作71例均有该终点结果。",
+      "report_locators": ["Codex v0 PDF物理p4", "玻尔空间§五", "玻尔网页PDF物理p11", "玻尔高级§四"],
+      "interpretation": "支持早期信号及继续试验，不能证明AI因果提高临床成功率。玻尔空间的TEAE译名需修正。",
+      "limitations": "官方注册为申办方提交；未重分析个体数据，未据此宣称阅读全文或独立复现疗效。"
+    },
+    {
+      "id": "C02",
+      "subject": "Rentosertib III期时间窗",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07687459",
+      "snapshot": "NCT07687459.json",
+      "source_locator": "statusModule；designModule.enrollmentInfo；outcomesModule.primaryOutcomes",
+      "finding": "RECRUITING；计划320人；实际开始2026-09-09；52周FVC年下降率；预计主要完成2029-10-30；记录于2026-10-13更新，早于高级版与Codex明确标注的日期；其他稿件具体生成日未知。",
+      "report_locators": ["玻尔空间§五临床表", "玻尔高级§九9.1、§十", "Codex v0 PDF物理p4/p10"],
+      "interpretation": "按10月29日当前适用性，玻尔空间未纳入已有III期推进；其具体生成日未知，不反推生成当日遗漏；玻尔高级将rentosertib纳入2026—2028多个III期读数，缺注册日历支持。Codex的2026年7月启动属于公司宣布启动，不能与9月实际开始混为同一事件。",
+      "limitations": "主要完成日是可变的预计日期，不等于已产生结果；不能排除另行披露的中期分析，但原稿没有提供相应证据。"
+    },
+    {
+      "id": "C03",
+      "subject": "GB-0895 SOLAIRIA-1",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07276724",
+      "snapshot": "NCT07276724.json",
+      "source_locator": "identificationModule；designModule.enrollmentInfo；statusModule.primaryCompletionDateStruct",
+      "finding": "计划786人；预计主要完成2028-12；记录2026-10-22更新。",
+      "report_locators": ["玻尔高级§四4.2临床表"],
+      "interpretation": "单项SOLAIRIA-1不能写成约1600人。",
+      "limitations": "计划人数，不是已完成入组人数。"
+    },
+    {
+      "id": "C04",
+      "subject": "GB-0895 SOLAIRIA-2及合计",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07359846",
+      "snapshot": "NCT07359846.json",
+      "source_locator": "identificationModule；designModule.enrollmentInfo；statusModule.primaryCompletionDateStruct",
+      "finding": "计划786人；预计主要完成2029-01；记录2026-10-20更新。与C03合计1572人。",
+      "report_locators": ["玻尔高级§四4.2、§九9.1、§十"],
+      "interpretation": "两项合计可近似1600人；两项主要完成时间跨2028—2029，不能把全部读数压在2026—2028。",
+      "limitations": "没有把日期差异认定为编造；需区分试验启动、主要完成、披露读数与获批。"
+    },
+    {
+      "id": "C05",
+      "subject": "英矽2026H1收入、利润和经营现金流",
+      "url": "https://ir.insilico.com/media/b4thx2ea/2026-interim-report-en.pdf",
+      "source_locator": "印刷p12、p56、p60；PDF页索引12、56、60",
+      "finding": "收入106303、净利35537、经营现金净流入78985，单位千美元；2026中期数据未经审计，有中期审阅报告。",
+      "report_locators": ["Codex v0 PDF物理p6/p8", "玻尔高级§九9.2"],
+      "interpretation": "Codex的1.063亿美元、3554万美元及经营现金流为正获支持。高级版英矽‘报告期亏损’缺明确期间，遗漏已披露中期盈利，使当前判断不完整；不是断言其历史亏损不存在。",
+      "limitations": "财务披露核对不等于证明盈利可持续或AI有效；未查银行流水。"
+    },
+    {
+      "id": "C06",
+      "subject": "晶泰2026H1及同期收入",
+      "url": "https://ir.xtalpi.com/media/1xtkvfec/2026-interim-report.pdf",
+      "source_locator": "印刷p5、p44、p103；相应PDF页索引相同",
+      "finding": "2026/2025H1总收入393627/517076；药物发现200109/435212；AI4S193518/81864；2026H1净亏损224944，单位千人民币。",
+      "report_locators": ["Codex v0 PDF物理p6/p8", "玻尔网页PDF物理p8/p13"],
+      "interpretation": "支持Codex总收入下降、AI4S增长及亏损的描述。网页稿主要使用2025数据，谈当前现金流需补同期间拆解。",
+      "limitations": "按业务线列收入不等于分别披露分部利润；AI4S包括非药物应用，不能全计狭义制药市场。"
+    },
+    {
+      "id": "C07",
+      "subject": "Schrodinger 2026Q2软件与利润来源",
+      "url": "https://ir.schrodinger.com/press-releases/news-details/2026/Schrdinger-Reports-Second-Quarter-2026-Financial-Results/",
+      "source_locator": "Operating and Financial Highlights；Condensed Consolidated Statements of Operations",
+      "finding": "软件收入3250万美元、ACV2960万美元；净利5975千美元，经营亏损41547千美元，公允价值收益45868千美元、其他收益3026千美元、所得税1372千美元。",
+      "report_locators": ["Codex v0 PDF物理p8"],
+      "interpretation": "净利与日常经营盈利不同，利润桥可复算；ACV也不是当期收入。",
+      "limitations": "公司原始业绩公告，不构成独立经营质量验证或估值审计。"
+    },
+    {
+      "id": "C08",
+      "subject": "Isomorphic—Lilly首付与合同分母",
+      "url": "https://storage.googleapis.com/isomorphiclabs-website-public-artifacts/ISOMORPHIC_LABS_LILLY_07_01_24.pdf",
+      "source_locator": "PDF物理p1条款段，2024-01-07",
+      "finding": "首付4500万美元；正文称里程碑最高17亿美元，不含首付与后续销售分成；首付/(首付+里程碑)约2.58%。",
+      "report_locators": ["玻尔网页PDF物理p4/p9", "玻尔空间§四Isomorphic"],
+      "interpretation": "网页稿2.6%的算术近似可接受，但首付比例受项目数、权益、研发义务、里程碑结构等影响，不能识别成功概率。",
+      "limitations": "公告标题和正文分母表述不同；优先按正文条款复算。未取得完整合同或到账记录。"
+    },
+    {
+      "id": "C09",
+      "subject": "玻尔网页内部市场预测及情景概率",
+      "source_locator": "原件PDF物理p5表1与解释段；物理p15情景段",
+      "finding": "p5把中等口径约为2030前后150亿美元作参考，p15称同口径与表1推到300—450亿美元；缺同年基数、选择规则与勾稽；六成/两成/两成情景概率未给校准。",
+      "report_locators": ["玻尔网页PDF物理p5/p15—16"],
+      "interpretation": "不用于TAM估值或概率决策；可改成无概率条件情景，逐行列示基年和公式。",
+      "limitations": "确认的是内部推导缺口，未据此证明外部所有市场预测数字错误。"
+    },
+    {
+      "id": "C10",
+      "subject": "两份Markdown的数字与技术强判断",
+      "source_locator": "玻尔空间§二/§三/§五/§八；玻尔高级§二/§四4.4/§九",
+      "finding": "空间市场表混用2025/2026基年和2031—2035终年；空间241亿美元与高级24.1亿美元存在跨文本数量级差异，原始机构定义与单位仍待逐项核验。空间以方法名单断言流匹配已取代扩散，高级断言早期提速降本已验证与闭环平台享溢价，正文缺统一任务/资源/样本对照。",
+      "report_locators": ["两份Markdown相应章节"],
+      "interpretation": "标为待验证强判断；跨文本冲突本身不能证明哪份正确；市场原始链接未全部核验。",
+      "limitations": "未进行模型实验、论文基准全面复现、市场数据库购买或估值实证。"
+    }
+  ],
+  "access_notes": [
+    "ClinicalTrials.gov网页通过检索工具仅返回动态壳；本轮改用官方v2 API读取完整JSON，四项请求成功并保存快照。",
+    "财报及合同PDF由网页工具读取，Schrodinger原公告可读；仅摘录关键数值与定位，不公开复制财报全文。"
+  ],
+  "not_done": ["全文每一引用核验", "全部市场研究定义与单位核对", "完整生成轨迹/研究包重放", "临床或模型实验复现", "客户访谈", "实际愿付调查", "外部盲评"]
+}

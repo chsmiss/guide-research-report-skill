@@ -1,0 +1,224 @@
+{
+  "protocol_version": "1.1.0",
+  "report": {
+    "id": "bohr_advanced",
+    "title": "玻尔科学 Mac·高级 v0",
+    "filename": "玻尔科学mac-高级v0-AI制药行业研究报告.md",
+    "path": "reports/玻尔科学mac-高级v0-AI制药行业研究报告.md",
+    "version": "original-v0-sha256:89832dec9df3bf6cc557caca59302c9393a7cec3936e24469f8e3ca5b7c1f4a3",
+    "sha256": "89832dec9df3bf6cc557caca59302c9393a7cec3936e24469f8e3ca5b7c1f4a3",
+    "publication_date": "2026-10-27",
+    "evidence_cutoff": "报告声明截至2026-10；个别指标期间见正文",
+    "generation_skill_used": false,
+    "provenance_basis": "生成方式与未用skill由提供者说明；未取得完整提示词、运行日志、模型版本与成本记录。"
+  },
+  "assessment": {
+    "purpose": "通用研报质量比较；目标读者具备基本医药/研发知识，关注行业理解与企业筛选。",
+    "assessed_at": "2026-10-29 Asia/Shanghai",
+    "materials_received": [
+      "reports/玻尔科学mac-高级v0-AI制药行业研究报告.md"
+    ],
+    "checks_performed": [
+      "本次重新核对原件SHA256；复用记录仅限相同文件版本，按v1.1.0统一判据复核。",
+      "阅读Markdown全文或提取PDF全文并重读摘要、技术、临床、商业、财务及结论关键段落。",
+      "两份PDF各抽查五页渲染；Markdown按标题、段落、表格和链接结构审读。",
+      "重新读取四项ClinicalTrials.gov官方API；查英矽/晶泰中报、Schrodinger业绩及Isomorphic-Lilly原公告。",
+      "核对市场预测内部口径、交易首付比例及临床分母；见evidence/source_checks.json与calculation_checks.json。",
+      "评审者自查主结论—证据—推理—限制—下一步；不是外部读者实验。"
+    ],
+    "limitations": [
+      "关键支点抽查，不是全部事实及链接审计；来源核对不等于疗效、平台效率或因果复现。",
+      "仅按本次四个单文件评估；未收到完整生成日志和研究包，不断言作者不存在其他附件。",
+      "未进行企业/客户访谈、独立模型实验、临床个体数据重分析或外部同行评审。",
+      "同一AI评审者知道产品名称，可能有品牌和自评偏差；评分不是盲测，也不证明产品总体优劣。",
+      "主评分按balanced重算；orientation/investment仅改变权重，是敏感性，不是两次独立用途复评。"
+    ],
+    "confidence": "medium",
+    "confidence_basis": "正文、具体缺陷与关键原始记录可定位；抽查外的事实、读者实际表现和生成过程仍未验证。"
+  },
+  "profile": "investment",
+  "weight_mode": "preset",
+  "weight_rationale": null,
+  "weights": {
+    "scope": 4,
+    "coverage": 5,
+    "evidence": 20,
+    "increment": 8,
+    "reasoning": 12,
+    "quantitative": 14,
+    "industry": 6,
+    "challenge": 7,
+    "decision": 9,
+    "communication": 15
+  },
+  "gate": {
+    "status": "restricted",
+    "basis": [
+      "本次原文与原始出处抽查范围见evaluation/evidence/source_checks.json；不是全文保证。",
+      "§四把SOLAIRIA-1列约1600例，官方两项各786例；§九/十预期窗口未匹配注册日历；提速降本与统一估值溢价缺对照。"
+    ],
+    "affected_scope": "不可直接用其催化剂日历或样本规模判断资产; 相关投资逻辑只能作为待验证假设",
+    "remediation": "逐试验列注册号、例数、主要终点和预计完成日，区分预测; 补对照与分母，或收窄结论"
+  },
+  "issues": [
+    {
+      "id": "BA1",
+      "primary_dimension": "quantitative",
+      "description": "GB-0895试验例数归属和集中读数窗口不准确",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "§四 关键管线进展",
+        "§九 催化剂",
+        "§十 结论"
+      ],
+      "checks": [
+        "NCT07276724与NCT07359846均786例，预计主要完成2028-12与2029-01",
+        "NCT07687459预计主要完成2029-10-30"
+      ],
+      "consequence": "不可直接用其催化剂日历或样本规模判断资产",
+      "repair": "逐试验列注册号、例数、主要终点和预计完成日，区分预测"
+    },
+    {
+      "id": "BA2",
+      "primary_dimension": "reasoning",
+      "description": "提速降本已验证与平台估值溢价的强结论缺少对应比较",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "§四 成功率解读",
+        "§九 投资逻辑"
+      ],
+      "checks": [
+        "全文未给出任务匹配、资源投入可比的成本对照，亦无估值样本支持统一溢价"
+      ],
+      "consequence": "相关投资逻辑只能作为待验证假设",
+      "repair": "补对照与分母，或收窄结论"
+    }
+  ],
+  "complete": true,
+  "headline_total": 54.5,
+  "diagnostic_total": 54.5,
+  "assessed_contribution": 54.5,
+  "unassessed_weight": 0.0,
+  "unassessed_dimensions": [],
+  "possible_range": [
+    54.5,
+    54.5
+  ],
+  "comparison_key": "c49fa5b0220647d5",
+  "dimensions": [
+    {
+      "id": "scope",
+      "label": "问题定义与定位",
+      "weight": 4,
+      "rating": 3.5,
+      "contribution": 2.8,
+      "observations": "行业概览与投资逻辑定位明确，但用产业趋势确定等强断言替代条件判断。",
+      "locators": [
+        "Markdown 摘要"
+      ]
+    },
+    {
+      "id": "coverage",
+      "label": "框架完整性",
+      "weight": 5,
+      "rating": 4,
+      "contribution": 4.0,
+      "observations": "十模块都有涉及，适合新闻线索扫描，但多数是罗列。",
+      "locators": [
+        "Markdown 一至十"
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "事实、证据质量与时效性",
+      "weight": 20,
+      "rating": 2.5,
+      "contribution": 10.0,
+      "observations": "广泛依赖二手汇总；英矽报告期亏损未列期间且未纳入已披露2026H1盈利，时效性不足；非据此判造假。",
+      "locators": [
+        "Markdown 九 风险提示"
+      ]
+    },
+    {
+      "id": "increment",
+      "label": "信息增量",
+      "weight": 8,
+      "rating": 2.5,
+      "contribution": 4.0,
+      "observations": "融资、临床与交易新闻丰富，但独立重算和新的解释较少。",
+      "locators": [
+        "Markdown 五 商业模式"
+      ]
+    },
+    {
+      "id": "reasoning",
+      "label": "分析深度与推理",
+      "weight": 12,
+      "rating": 2.5,
+      "contribution": 6.0,
+      "observations": "称早期提速降本已被验证、端到端平台享有溢价，未提供可比成本或估值识别。",
+      "locators": [
+        "Markdown 四 成功率"
+      ]
+    },
+    {
+      "id": "quantitative",
+      "label": "定量纪律",
+      "weight": 14,
+      "rating": 2,
+      "contribution": 5.6,
+      "observations": "GB-0895单列SOLAIRIA-1约1600例，与当前两项各786例不同；2026–2028集中读数叙事缺少注册时间支持。",
+      "locators": [
+        "Markdown 四 关键管线"
+      ]
+    },
+    {
+      "id": "industry",
+      "label": "行业机制与落地理解",
+      "weight": 6,
+      "rating": 3,
+      "contribution": 3.6,
+      "observations": "可辨认业务模式，但把巨头自建列作商业模式，交付、收费和成本讨论浅。",
+      "locators": [
+        "Markdown 六 竞争格局"
+      ]
+    },
+    {
+      "id": "challenge",
+      "label": "反证、独立性与边界处理",
+      "weight": 7,
+      "rating": 2.5,
+      "contribution": 3.5,
+      "observations": "列失败与风险，但未充分修正趋势确定和统一平台溢价等强结论。",
+      "locators": [
+        "Markdown 九 风险提示"
+      ]
+    },
+    {
+      "id": "decision",
+      "label": "决策可用性与决策工具",
+      "weight": 9,
+      "rating": 2.5,
+      "contribution": 4.5,
+      "observations": "有三条筛选线索，缺乏具体判断更新规则与经过验证的决策工具。",
+      "locators": [
+        "Markdown 十 结论"
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "论证可读性与交付可用性",
+      "weight": 15,
+      "rating": 3.5,
+      "contribution": 10.5,
+      "observations": "摘要先列五条判断，随后按定义→市场→技术→临床→商业→公司→风险展开；§四先列推进再列失败，接着解释I/II期差异，读者容易跟随。§五商业模式按收费方式说明，比单纯企业名单有用。融资、英矽IPO和Isomorphic融资在摘要/竞争/资本章节多次重复；§九从新闻直接走到趋势确定与平台溢价，缺条件说明。可快速浏览，深入理解成本与兑现仍需补解释；未因“高级”标签加分。",
+      "locators": [
+        "Markdown摘要；§四4.2—4.4；§五；§六—七；§九9.1与§十"
+      ]
+    }
+  ],
+  "notice": "Arithmetic/record validation only; not factual verification. Unknown ranges are not confidence intervals. Compare only with matching purpose, weights, gate restrictions and review depth.",
+  "sensitivity_only": true
+}

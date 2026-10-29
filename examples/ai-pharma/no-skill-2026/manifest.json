@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-10-29 Asia/Shanghai",
+  "origin": "用户提供的四个原始文件；逐字节保留，不将评审批注写入原件。",
+  "generation_provenance": "四份均未使用研报生成skill，由用户说明；未取得完整实验控制与运行记录。",
+  "reports": [
+    {
+      "id": "codex_v0",
+      "label": "Codex v0",
+      "path": "reports/codex_v0_AI制药行业研究报告_20261026.pdf",
+      "sha256": "aa8cb2786a4b369c54d1a3021ceaadbd468f80e076302ad33d790c2252e4aa0e",
+      "bytes": 994318,
+      "generation_skill_used": false,
+      "pages": 13
+    },
+    {
+      "id": "bohr_web",
+      "label": "玻尔写作网页·标准 v0",
+      "path": "reports/玻尔写作网页-标准v0-main.pdf",
+      "sha256": "82d5251fa1867608a533d9f943b38b23c8844298c8a06755763db21a305a97e2",
+      "bytes": 1266570,
+      "generation_skill_used": false,
+      "pages": 18
+    },
+    {
+      "id": "bohr_space",
+      "label": "玻尔科学空间 Mac·标准 v0",
+      "path": "reports/玻尔科学空间mac-标准v0-AI制药行业研报_2026.md",
+      "sha256": "ea7c3c096d29723d3722905c6231527827391670ec1348a73e8b76ce9b9b0cbf",
+      "bytes": 35009,
+      "generation_skill_used": false,
+      "pages": null
+    },
+    {
+      "id": "bohr_advanced",
+      "label": "玻尔科学 Mac·高级 v0",
+      "path": "reports/玻尔科学mac-高级v0-AI制药行业研究报告.md",
+      "sha256": "89832dec9df3bf6cc557caca59302c9393a7cec3936e24469f8e3ca5b7c1f4a3",
+      "bytes": 18653,
+      "generation_skill_used": false,
+      "pages": null
+    }
+  ]
+}

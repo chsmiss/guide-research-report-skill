@@ -1,0 +1,181 @@
+{
+  "protocol_version": "1.1.0",
+  "profile": "balanced",
+  "report": {
+    "id": "bohr_web",
+    "title": "玻尔写作网页·标准 v0",
+    "filename": "玻尔写作网页-标准v0-main.pdf",
+    "path": "reports/玻尔写作网页-标准v0-main.pdf",
+    "version": "original-v0-sha256:82d5251fa1867608a533d9f943b38b23c8844298c8a06755763db21a305a97e2",
+    "sha256": "82d5251fa1867608a533d9f943b38b23c8844298c8a06755763db21a305a97e2",
+    "publication_date": "2026-10（具体生成日未确认）",
+    "evidence_cutoff": "报告声明截至2026-10；个别指标期间见正文",
+    "generation_skill_used": false,
+    "provenance_basis": "生成方式与未用skill由提供者说明；未取得完整提示词、运行日志、模型版本与成本记录。",
+    "pages": 18
+  },
+  "assessment": {
+    "purpose": "通用研报质量比较；目标读者具备基本医药/研发知识，关注行业理解与企业筛选。",
+    "assessed_at": "2026-10-29 Asia/Shanghai",
+    "materials_received": [
+      "reports/玻尔写作网页-标准v0-main.pdf"
+    ],
+    "checks_performed": [
+      "本次重新核对原件SHA256；复用记录仅限相同文件版本，按v1.1.0统一判据复核。",
+      "阅读Markdown全文或提取PDF全文并重读摘要、技术、临床、商业、财务及结论关键段落。",
+      "两份PDF各抽查五页渲染；Markdown按标题、段落、表格和链接结构审读。",
+      "重新读取四项ClinicalTrials.gov官方API；查英矽/晶泰中报、Schrodinger业绩及Isomorphic-Lilly原公告。",
+      "核对市场预测内部口径、交易首付比例及临床分母；见evidence/source_checks.json与calculation_checks.json。",
+      "评审者自查主结论—证据—推理—限制—下一步；不是外部读者实验。"
+    ],
+    "limitations": [
+      "关键支点抽查，不是全部事实及链接审计；来源核对不等于疗效、平台效率或因果复现。",
+      "仅按本次四个单文件评估；未收到完整生成日志和研究包，不断言作者不存在其他附件。",
+      "未进行企业/客户访谈、独立模型实验、临床个体数据重分析或外部同行评审。",
+      "同一AI评审者知道产品名称，可能有品牌和自评偏差；评分不是盲测，也不证明产品总体优劣。",
+      "主评分按balanced重算；orientation/investment仅改变权重，是敏感性，不是两次独立用途复评。"
+    ],
+    "confidence": "medium",
+    "confidence_basis": "正文、具体缺陷与关键原始记录可定位；抽查外的事实、读者实际表现和生成过程仍未验证。"
+  },
+  "gate": {
+    "status": "restricted",
+    "basis": [
+      "本次原文与原始出处抽查范围见evaluation/evidence/source_checks.json；不是全文保证。",
+      "PDF物理p5与p15的中等口径市场估计缺可复算桥；p4/p9把首付款比例赋予未识别的产出概率含义。"
+    ],
+    "affected_scope": "市场预测、首付比例概率解释及相应投资推断",
+    "remediation": "统一年份口径重算市场，撤回概率和因果过度外推"
+  },
+  "ratings": {
+    "scope": {
+      "rating": 4,
+      "observations": "产业投资定位清晰，但总体定价阶段判断偏强。",
+      "locators": [
+        "PDF p1,4"
+      ]
+    },
+    "coverage": {
+      "rating": 4.5,
+      "observations": "十模块及资本周期结构完整。",
+      "locators": [
+        "PDF p2–3"
+      ]
+    },
+    "evidence": {
+      "rating": 3,
+      "observations": "来源可部分回查，较多公司财务停留2025，部分定位仅主页。",
+      "locators": [
+        "PDF p8,13"
+      ]
+    },
+    "increment": {
+      "rating": 3.5,
+      "observations": "交易拆解和资本周期有启发，若干结论的增量被过度推理抵消。",
+      "locators": [
+        "PDF p8–9"
+      ]
+    },
+    "reasoning": {
+      "rating": 2.5,
+      "observations": "首付比被读成成功概率定价；历史I期差异被当作AI因果价值证明。",
+      "locators": [
+        "PDF p4,9,11"
+      ]
+    },
+    "quantitative": {
+      "rating": 2,
+      "observations": "同称中等口径2030前后，先150亿后300–450亿，无可复算口径桥；情景概率未校准。",
+      "locators": [
+        "PDF p5,15"
+      ]
+    },
+    "industry": {
+      "rating": 3.5,
+      "observations": "行业链条与商业模式解释鲜明，但现金及成本缺少同期间穿透。",
+      "locators": [
+        "PDF p7–8,13"
+      ]
+    },
+    "challenge": {
+      "rating": 2.5,
+      "observations": "有失败案例，但靶点失败统一归因与融资/复购混同削弱独立挑战。",
+      "locators": [
+        "PDF p9,12"
+      ]
+    },
+    "decision": {
+      "rating": 3,
+      "observations": "尽调指标实用但现金、估值多为清单和锚，未具体展开。",
+      "locators": [
+        "PDF p15–16"
+      ]
+    },
+    "communication": {
+      "rating": 4,
+      "observations": "p4六条判断和周期主线使读者很快知道作者立场。 p7说明药企既是客户也是竞争者，p9按交易表→比例→解释展开，p15指标与情景容易定位。 口径→技术边界→价值链→交易→资本→临床→公司→行动构成可跟随的叙事。 标题和段落较集中，少有审计台账对主线的打断；部分“模型层/平台层”等判断略压缩。 PDF结构和表格可读，两页目录相对于正文偏长，存在措辞与个别符号问题；不把机构式排版本身当内容增值。",
+      "locators": [
+        "PDF p4",
+        "PDF p7–9",
+        "PDF p15–16"
+      ]
+    }
+  },
+  "issues": [
+    {
+      "id": "B1",
+      "description": "市场推算未勾稽",
+      "primary_dimension": "quantitative",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "PDF p5",
+        "PDF p15"
+      ],
+      "checks": [
+        "比较同一报告表1与情景推导，未给可复算桥"
+      ],
+      "consequence": "不用于TAM/估值推断",
+      "repair": "统一输入、边界和年份后复算"
+    },
+    {
+      "id": "B2",
+      "description": "首付与历史临床比较的概率/因果含义超出证据",
+      "primary_dimension": "reasoning",
+      "severity": "major",
+      "scope": "conclusion",
+      "locators": [
+        "PDF p4",
+        "PDF p9",
+        "PDF p11"
+      ],
+      "checks": [
+        "原文未给控制权利、义务、项目数或选择偏差的识别模型"
+      ],
+      "consequence": "不据此估计成功概率或AI因果提升",
+      "repair": "收窄为观察与支付结构解释"
+    }
+  ],
+  "readability_review": {
+    "label": "玻尔网页标准版",
+    "rating": 4,
+    "locators": [
+      "PDF p4",
+      "PDF p7–9",
+      "PDF p15–16"
+    ],
+    "entry": "p4六条判断和周期主线使读者很快知道作者立场。",
+    "explanation": "p7说明药企既是客户也是竞争者，p9按交易表→比例→解释展开，p15指标与情景容易定位。",
+    "continuity": "口径→技术边界→价值链→交易→资本→临床→公司→行动构成可跟随的叙事。",
+    "reading_cost": "标题和段落较集中，少有审计台账对主线的打断；部分“模型层/平台层”等判断略压缩。",
+    "delivery": "PDF结构和表格可读，两页目录相对于正文偏长，存在措辞与个别符号问题；不把机构式排版本身当内容增值。",
+    "reconstruction": {
+      "question": "AI制药如何从平台叙事进入兑现评价？",
+      "answer": "作者强调首付款、临床读数、模式分化和失败案例。",
+      "decisive_evidence": "交易表、资本整合与代表性临床案例支撑作者叙事。",
+      "inference": "文字将数据导向现金流与靶点选择；部分概率和因果外推不能成立。",
+      "limit_and_action": "可读性较好不代表推断正确；市场推算及首付概率解释修正前限用。"
+    },
+    "repair": "保留叙事线，将强断言改成与证据匹配的解释；口径与因果问题在各自维度处理，不重复扣可读性。"
+  }
+}
