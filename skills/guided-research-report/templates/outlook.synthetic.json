@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "scope": {"subject": "SYNTHETIC TEACHING EXERCISE NOT INDUSTRY DATA", "as_of": "2026-10-28", "horizon": "2028-12-31"},
+  "market": {
+    "unit": "million USD per year", "year": 2028,
+    "definition": "Synthetic annual supplier revenue excluding contingent drug-rights payments",
+    "segments": [
+      {"id": "tools", "buyer_budget_key": "disjoint software budget", "buyers": 100, "annual_spend": 1, "addressable_fraction": 0.5, "adoption": 0.2, "vendor_share": 0.1, "input_basis": "Wholly invented teaching inputs; replace for a real report", "nonoverlap_basis": "Synthetic tool spending excludes service fees"},
+      {"id": "services", "buyer_budget_key": "disjoint project-service budget", "buyers": 50, "annual_spend": 2, "addressable_fraction": 0.8, "adoption": 0.25, "vendor_share": 0.1, "input_basis": "Wholly invented teaching inputs; replace for a real report", "nonoverlap_basis": "Synthetic service fees exclude software resale and equipment"}
+    ]
+  },
+  "scenarios": {
+    "unit": "million USD per year", "horizon": "2028-12-31",
+    "outcome_definition": "Synthetic 2028 annual served supplier market",
+    "probability_type": "analyst_subjective",
+    "probability_basis": "Invented tutorial weights only. A real report must reason from sourced observations and alternatives; these are not calibrated probabilities or recommended defaults.",
+    "partition_definition": "Synthetic 2028 market below 25, between 25 and 50 inclusive, or above 50; exhaustive and disjoint",
+    "scenarios": [
+      {"id": "down", "state_definition": "2028 annual market below 25", "probability": 0.25, "outcome": 15, "assumptions": "Synthetic low adoption with constrained customer budgets", "update_trigger": "Customer budget and comparable renewal evidence weakens", "decision_implication": "Limit exposure and retain pilot scope"},
+      {"id": "base", "state_definition": "2028 annual market 25 to 50 inclusive", "probability": 0.5, "outcome": 30, "assumptions": "Synthetic served market equals the bottom-up template total", "update_trigger": "Same-budget delivery and customer activity track assumptions", "decision_implication": "Expand only where unit economics meet agreed criteria"},
+      {"id": "up", "state_definition": "2028 annual market above 50", "probability": 0.25, "outcome": 70, "assumptions": "Synthetic wider adoption and capacity with validated repeat demand", "update_trigger": "New customer cohorts repeatedly meet cost and quality targets", "decision_implication": "Increase capacity subject to cash and delivery checks"}
+    ],
+    "weight_transfers": [{"label": "Shift 10 percentage points from base to downside", "from": "base", "to": "down", "amount": 0.1}]
+  },
+  "cash": {
+    "unit": "million USD", "opening_usable_cash": 40, "minimum_cash": 5,
+    "cash_definition": "Synthetic unrestricted usable cash; restricted balances excluded",
+    "period_timing": "Ordered quarter-end aggregates; intra-quarter payment order is unmodeled",
+    "input_basis": "All cash amounts invented for calculation testing; no company-specific inference",
+    "periods": [
+      {"period": "Q1", "operating_receipts": 5, "milestone_receipts": 20, "financing_receipts": 0, "operating_payments": 25, "capex": 5, "debt_service": 0},
+      {"period": "Q2", "operating_receipts": 5, "milestone_receipts": 0, "financing_receipts": 30, "operating_payments": 25, "capex": 0, "debt_service": 0},
+      {"period": "Q3", "operating_receipts": 5, "milestone_receipts": 0, "financing_receipts": 0, "operating_payments": 25, "capex": 0, "debt_service": 0},
+      {"period": "Q4", "operating_receipts": 5, "milestone_receipts": 0, "financing_receipts": 0, "operating_payments": 25, "capex": 0, "debt_service": 0}
+    ],
+    "stresses": [
+      {"id": "delay_no_equity", "milestone_delay_periods": 2, "operating_payment_multiplier": 1, "financing_receipt_multiplier": 0, "assumption_basis": "Synthetic two-quarter milestone delay and no new equity"},
+      {"id": "delay_costs_no_equity", "milestone_delay_periods": 4, "operating_payment_multiplier": 1.2, "financing_receipt_multiplier": 0, "assumption_basis": "Synthetic payment beyond horizon, 20 percent payment increase, no new equity"}
+    ]
+  },
+  "funnel": {
+    "basis": "historical_reference", "rate_kind": "conditional_transition",
+    "source": "SYNTHETIC rates only; replace with checked original BIO or other applicable report and locator",
+    "population": "Invented homogeneous programs for teaching arithmetic",
+    "observation_window": "No empirical observation window in this synthetic example",
+    "denominator_definition": "Each conditional rate concerns the same compatible reference population entering that stage",
+    "initial_projects": 100,
+    "transitions": [
+      {"from": "Phase I", "to": "Phase II", "rate": 0.6},
+      {"from": "Phase II", "to": "Phase III", "rate": 0.4},
+      {"from": "Phase III", "to": "Filing", "rate": 0.5},
+      {"from": "Filing", "to": "Approval", "rate": 0.8}
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "manual_walkthrough_cases_not_independent_model_evaluation",
+  "cases": [
+    {
+      "request": "帮我写一份AI制药研报",
+      "expected_next": "展示推荐类型与主用途，请用户选择；选择后有限侦察并提交大纲，确认后完整研究"
+    },
+    {
+      "request": "用行业全景给初学者写AI制药研报，中文Word和PDF",
+      "expected_next": "沿用明确类型与orientation用途，补关键范围信息后提交大纲确认"
+    },
+    {
+      "request": "按我前面批准的大纲继续写，仍做技术调研",
+      "expected_next": "记录prior_approval和原批准依据，直接推进研究写作"
+    },
+    {
+      "request": "自主选择类型和大纲，直接完成公司尽调",
+      "expected_next": "记录user_delegated，公开范围和大纲后继续"
+    },
+    {
+      "request": "只把现有报告摘要缩短一半",
+      "expected_next": "沿用现有范围完成小范围改写并核对事实保真"
+    },
+    {
+      "request": "已批准AI制药全景大纲，但部分私企收入不可得",
+      "expected_next": "继续完整地图，以可查模式、预算与条件模型分析，标出具体缺口"
+    },
+    {
+      "request": "已批准行业展望，缺少校准概率的数据",
+      "expected_next": "给有依据且明确标注的主观权重和敏感性；理由仍不足的概率项明确记待完成"
+    },
+    {
+      "request": "从已经确认的中国行业入门改为全球投资尽调",
+      "expected_next": "呈现实质范围和用途修订的大纲，取得确认后推进依赖变化的工作"
+    }
+  ]
+}

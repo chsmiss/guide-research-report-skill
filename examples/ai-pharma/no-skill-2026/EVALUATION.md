@@ -1,3 +1,5 @@
+> 历史存档：本文为旧四份报告评估，采用旧协议。当前五份排名见[新比较原文](../comparison-20261029/RANKING.md)；两套分数及价格口径不可混用。旧评估 skill 已从当前分支移除，本文保留原记录，不代表此次重新核查。
+
 # 四份研报的具体评审依据
 
 评估日期：2026-10-29，Asia/Shanghai。协议：research-report-evaluator v1.1.0；主用途：balanced。原件身份见 [manifest.json](manifest.json)，全部与本轮提供文件逐字节一致。

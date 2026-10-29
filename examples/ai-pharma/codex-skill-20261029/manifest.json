@@ -1,0 +1,13 @@
+{
+  "title": "AI制药行业投资尽调 20261029",
+  "published_filename": "codex-skill.pdf",
+  "pages": 32,
+  "information_cutoff": "2026-10-29",
+  "skill": {
+    "name": "guided-research-report",
+    "version": "1.1.0"
+  },
+  "sha256": "70af81fe54ff27ee5b86c155c4b5a3be37e89a4b3a6252a481078312f479a18a",
+  "bytes": 1632043,
+  "publication_note": "PDF仅改名，未修改内容；研究包与Word未包含在本次仓库发布中。"
+}

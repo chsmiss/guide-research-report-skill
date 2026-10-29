@@ -1,0 +1,54 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{research-layout}[2026/10/28 v2.5.1 Readable single-column research starter]
+% Use with \documentclass[UTF8,fontset=fandol,11pt,a4paper]{ctexart} and XeLaTeX.
+\RequirePackage[margin=23mm,headheight=15pt]{geometry}
+\RequirePackage{fontspec}
+\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]
+\RequirePackage[table]{xcolor}
+\definecolor{ResearchNavy}{HTML}{1B365D}
+\definecolor{ResearchSteel}{HTML}{4B6B94}
+\definecolor{ResearchRisk}{HTML}{B83A2D}
+\definecolor{ResearchGray}{HTML}{5D6774}
+% Preserve color/macro names introduced by the concurrent v2.5 edition.
+\colorlet{ResearchInk}{ResearchNavy}
+\colorlet{ResearchAccent}{ResearchSteel}
+\colorlet{ResearchMuted}{ResearchGray}
+\definecolor{ResearchRule}{HTML}{D9E1E8}
+\RequirePackage{booktabs,tabularx,longtable,array,colortbl}
+\renewcommand{\arraystretch}{1.25}
+\setlength{\LTpre}{0.6\baselineskip}
+\setlength{\LTpost}{0.5\baselineskip}
+\RequirePackage[most]{tcolorbox}
+\newtcolorbox{researchcallout}[1][]{enhanced,breakable,colback=ResearchNavy!3,colframe=ResearchNavy,boxrule=0pt,borderline west={2pt}{0pt}{ResearchNavy},arc=0pt,left=9pt,right=8pt,top=6pt,bottom=6pt,#1}
+\RequirePackage{caption}
+\captionsetup{font=small,labelfont=bf,skip=6pt}
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=ResearchNavy,urlcolor=ResearchSteel,citecolor=ResearchNavy}
+\ctexset{section={format=\Large\bfseries\color{ResearchNavy}},subsection={format=\large\bfseries\color{ResearchNavy}}}
+\RequirePackage{needspace,etoolbox}
+\pretocmd{\section}{\Needspace{6\baselineskip}}{}{\PackageWarning{research-layout}{Section spacing hook unavailable; inspect page breaks}}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{\PackageWarning{research-layout}{Subsection spacing hook unavailable; inspect page breaks}}
+\raggedbottom
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.7}
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{1.2\baselineskip}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\setlength{\parskip}{0.35em}
+\linespread{1.2}
+\newcommand{\researchguide}[1]{{\small\color{ResearchGray}#1\par}\medskip}
+\newcommand{\researchdeck}[1]{\par\noindent{\large\color{ResearchMuted}#1}\par\medskip}
+\newcommand{\researchsource}[2]{\par\smallskip{\footnotesize\raggedright 资料来源：#1\par\if\relax\detokenize{#2}\relax\else 注：#2\par\fi}}
+\newcommand{\researchtablefont}{\small}
+\newcommand{\researchrisk}[1]{\textcolor{ResearchRisk}{\textbf{#1}}}
+% Apply \rowcolors{2}{ResearchGray!6}{white} locally inside each table group.
+% Long tables need explicit \endfirsthead / \endhead headers in the document.
+% Keep figures and their source/note together. Avoid scaling a dense table to fit.
