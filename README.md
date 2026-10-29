@@ -32,7 +32,7 @@ cp -R guide-research-report-skill/skills/guided-research-report ~/.codex/skills/
 
 | 排名 | 报告及原件 | 等权 | 投资尽调 | 行业入门 | 客户交付 |
 |---|---|---:|---:|---:|---:|
-| 1 | [codex-skill：北医引导尽调 1029](examples/ai-pharma/codex-skill-20261029/codex-skill.pdf) | 9.30 | 9.50 | 9.06 | 9.39 |
+| 1 | [codex-skill：AI 制药投资尽调 1029](examples/ai-pharma/codex-skill-20261029/codex-skill.pdf) | 9.30 | 9.50 | 9.06 | 9.39 |
 | 2 | [玻尔写作网页·标准 v0](examples/ai-pharma/no-skill-2026/reports/玻尔写作网页-标准v0-main.pdf) | 8.30 | 7.89 | 8.56 | 7.89 |
 | 3 | [玻尔科学空间 Mac·标准 v0](examples/ai-pharma/no-skill-2026/reports/玻尔科学空间mac-标准v0-AI制药行业研报_2026.md) | 7.80 | 7.67 | 7.69 | 7.81 |
 | 4 | [Codex v0](examples/ai-pharma/no-skill-2026/reports/codex_v0_AI制药行业研究报告_20261026.pdf) | 7.00 | 7.00 | 7.11 | 7.11 |
@@ -52,7 +52,7 @@ cp -R guide-research-report-skill/skills/guided-research-report ~/.codex/skills/
 
 两处评估修正值得保留：一是 Codex v0 原先被判“无 URL”，实际是 PDF 文本提取遗漏超链接注释，原文将可核查性 D1 从 4 调至 9；二是玻尔科学空间版因市场年份、CAGR 和临床引用问题，下调 D1/D6。评价应同时检查 PDF 文本与链接注释。
 
-原评估将新报告现金模型概括为“四家公司 10 季”；此处补充准确范围：**Recursion 为 9 季，其余三家公司为 10 季**。排名原文作为来源原样保留，未静默修改。
+原评估将新报告现金模型概括为“四家公司 10 季”；此处补充准确范围：**Recursion 为 9 季，其余三家公司为 10 季**。排名来源的展示名称已统一为 codex-skill，评分与判断内容保持原值。
 
 ### 十维评分明细
 
